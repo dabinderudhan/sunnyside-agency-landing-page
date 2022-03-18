@@ -11,6 +11,11 @@
     justify-content: space-between;
     width: 100%;
 
+    &--logo {
+      // cursor: pointer;
+      width: 150px;
+    }
+
     &--list {
       gap: 2rem;
       color: hsl(166, 50%, 88%);
