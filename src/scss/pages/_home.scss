@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(./src/images/desktop/image-header.jpg);
+  background-image: url("/src/images/desktop/image-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -123,12 +123,12 @@
 }
 
 .graphic {
-  background-image: url(./src/images/desktop/image-graphic-design.jpg);
+  background-image: url("/src/images/desktop/image-graphic-design.jpg");
   color: $color-primary-graphic-text;
 }
 
 .photography {
-  background-image: url(./src/images/desktop/image-photography.jpg);
+  background-image: url("/src/images/desktop/image-photography.jpg");
   color: $color-primary-photography-text;
 }
 
@@ -233,7 +233,7 @@
   }
 
   .hero {
-    background-image: url(./src/images/mobile/image-header.jpg);
+    background-image: url("/src/images/mobile/image-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
