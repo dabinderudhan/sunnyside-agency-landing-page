@@ -1,0 +1,346 @@
+.hero {
+  background-image: url(/src/images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  // background-attachment: fixed;
+  color: $color-white;
+  min-height: 90vh;
+
+  &-nav {
+    justify-content: space-between;
+    width: 100%;
+
+    &--list {
+      gap: 2rem;
+      color: hsl(166, 50%, 88%);
+    }
+
+    &--hamburger {
+      cursor: pointer;
+      display: none;
+    }
+  }
+
+  &-heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  &-arrow--img {
+    width: 50px;
+    display: block;
+  }
+}
+
+.show-nav-list {
+  display: none;
+}
+
+/////////////////////////////////////////////////
+// CARD SECTION
+/////////////////////////////////////////////////
+.section-cards {
+  &--item {
+    gap: 2rem;
+    align-items: start;
+
+    &_heading {
+      font-weight: $fw-darkest;
+      font-size: 2rem;
+    }
+
+    &_text {
+      color: $color-neutral-lighter;
+      font-size: 1rem;
+    }
+
+    &_lastrow {
+      text-align: center;
+      justify-content: end;
+      align-items: center;
+      padding-bottom: 2rem;
+      gap: 2rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      padding-inline: clamp(0rem, 10vw, 12rem);
+
+      & h2 {
+        font-size: 1.5rem;
+      }
+
+      & p {
+        font-size: 1rem;
+        font-weight: normal;
+      }
+    }
+
+    &_link {
+      font-family: $ff-heading;
+      text-transform: uppercase;
+      font-weight: $fw-darkest;
+      position: relative;
+
+      &::after {
+        content: "";
+        background-color: hsl(51, 100%, 79%);
+        height: 8px;
+        width: 110%;
+        display: block;
+        margin-top: -8px;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.softred {
+  &::after {
+    background-color: hsl(7, 99%, 90%);
+  }
+
+  &:hover {
+    &::after {
+      background-color: $color-primary-red;
+    }
+  }
+}
+
+.yellow:hover {
+  &::after {
+    background-color: $color-primary-yellow;
+  }
+}
+
+.card-padding {
+  padding-inline: clamp(0rem, 10vw, 9rem);
+}
+
+.graphic {
+  background-image: url(/src/images/desktop/image-graphic-design.jpg);
+  color: $color-primary-graphic-text;
+}
+
+.photography {
+  background-image: url(/src/images/desktop/image-photography.jpg);
+  color: $color-primary-photography-text;
+}
+
+/////////////////////////////////////////////////
+// TESTIMONIAL SECTION
+/////////////////////////////////////////////////
+.section-testimonials {
+  padding: 10rem clamp(1rem, 8%, 8rem);
+  gap: 4rem;
+
+  &--heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-neutral-lighter;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  &--wrapper {
+    margin: 0 auto;
+    gap: 3rem;
+  }
+
+  &--testi {
+    gap: 4rem;
+    text-align: center;
+
+    &_img {
+      display: block;
+      max-width: 18%;
+      min-height: 18%;
+      border-radius: 50%;
+    }
+
+    &_text {
+      color: $color-neutral-light;
+      line-height: 1.8;
+      letter-spacing: 0px;
+    }
+
+    &_name {
+      font-weight: $fw-darkest;
+    }
+
+    &_post {
+      display: block;
+      margin-top: 1rem;
+      font-family: $ff-default;
+      color: $color-neutral-lighter;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/////////////////////////////////////////////////
+// IMAGE SECTION
+/////////////////////////////////////////////////
+.section-images {
+  flex-wrap: wrap;
+  flex: 1;
+
+  &--image {
+    max-width: 100%;
+    min-height: 100%;
+    width: 25%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-padding {
+    padding-inline: 15%;
+  }
+
+  .section-cards {
+    &--item {
+      &_lastrow {
+        padding-bottom: 2rem;
+        gap: 1rem;
+        padding-inline: 2rem;
+
+        & p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////
+// MEDIA QUERY
+///////////////////////////////////////////////
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1.5rem;
+    gap: 4.5rem;
+  }
+
+  .hero-nav--hamburger {
+    display: block;
+  }
+
+  .hero {
+    background-image: url(/src/images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 70vh;
+    // height: 100%;
+
+    &-nav--list {
+      display: none;
+
+      &_item {
+        color: $color-neutral-light;
+
+        &:last-child {
+          margin-top: 1.2rem;
+        }
+      }
+    }
+
+    &-heading {
+      font-size: 2.5rem;
+      text-align: center;
+      padding-inline: 2rem;
+      margin-top: 2rem;
+    }
+
+    &-arrow--img {
+      width: 50px;
+    }
+  }
+
+  .section-cards {
+    & img {
+      height: 100%;
+    }
+
+    &--item {
+      text-align: center;
+      align-items: center;
+
+      &_heading {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      &_text {
+        line-height: 2;
+        font-size: 0.9rem;
+      }
+
+      &_link {
+        margin-bottom: 2rem;
+      }
+
+      &_1 {
+        grid-area: 2;
+      }
+    }
+  }
+
+  .section-testimonials {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    &--heading {
+      font-size: 1rem;
+      letter-spacing: 3px;
+    }
+
+    &--wrapper {
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    &--testi {
+      gap: 2rem;
+    }
+  }
+
+  .section-images {
+    flex-direction: row;
+
+    &--image {
+      width: 50%;
+    }
+  }
+}
+
+.show-nav-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 150px;
+  width: 90%;
+  height: max-content;
+  background-color: $color-white;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  transition: all ease-in-out 1s;
+
+  &::after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-bottom: 50px solid $color-white;
+    border-left: 50px solid transparent;
+    position: absolute;
+    top: -50px;
+    right: 0;
+  }
+}

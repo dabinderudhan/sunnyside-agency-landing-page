@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../dist/css/main.css" />
+
+    <!-- js link -->
+    <script defer src="./src/js/index.js"></script>
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container flex flex-col">
+        <nav class="hero-nav flex">
+          <a class="hero-nav--logo" href="#">
+            <img
+              class="hero-nav--logo_img"
+              src="./src/images/logo.svg"
+              alt="logo"
+              aria-hidden="true"
+            />
+          </a>
+          <div class="hero-nav--hamburger">
+            <img
+              src="./src/images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <ul class="hero-nav--list flex">
+            <li class="hero-nav--list_item"><a href="#">About</a></li>
+            <li class="hero-nav--list_item"><a href="#">Services</a></li>
+            <li class="hero-nav--list_item"><a href="#">Projects</a></li>
+            <li class="hero-nav--list_item "><a class="btn" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h1 class="hero-heading">We are creatives</h1>
+        <img
+          class="hero-arrow--img"
+          src="./src/images/icon-arrow-down.svg"
+          alt="arrow-down"
+          aria-hidden="true"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="section-cards grid">
+        <article
+          class="section-cards--item section-cards--item_1 flex flex-col card-padding"
+        >
+          <h2 class="section-cards--item_heading">Transform your brand</h2>
+          <p class="section-cards--item_text">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a class="section-cards--item_link yellow" href="#">Learn more</a>
+        </article>
+        <img
+          class="section-cards--item section-cards--item_2"
+          src="./src/images/desktop/image-transform.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <img
+          class="section-cards--item section-cards--item_3"
+          src="./src/images/desktop/image-stand-out.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+        <article
+          class="section-cards--item section-cards--item_4 flex flex-col card-padding"
+        >
+          <h2 class="section-cards--item_heading">
+            Stand out to the right audience
+          </h2>
+          <p class="section-cards--item_text">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a class="section-cards--item_link softred" href="#">Learn more</a>
+        </article>
+
+        <article
+          class="section-cards--item section-cards--item_lastrow graphic flex flex-col"
+        >
+          <h2 class="section-cards--item_heading">Graphic design</h2>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </article>
+        <article
+          class="section-cards--item section-cards--item_lastrow photography flex flex-col"
+        >
+          <h2 class="section-cards--item_heading">Photography</h2>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </article>
+      </section>
+      <section class="section-testimonials flex flex-col">
+        <h2 class="section-testimonials--heading">Client testimonials</h2>
+
+        <div class="section-testimonials--wrapper flex">
+          <article class="section-testimonials--testi flex flex-col">
+            <img
+              src="./src/images/image-emily.jpg"
+              alt="Emily"
+              class="section-testimonials--testi_img"
+            />
+            <p class="section-testimonials--testi_text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h3 class="section-testimonials--testi_name">
+              Emily R.
+              <span class="section-testimonials--testi_post"
+                >Marketing Director</span
+              >
+            </h3>
+          </article>
+
+          <article class="section-testimonials--testi flex flex-col">
+            <img
+              src="./src/images/image-thomas.jpg"
+              alt="thomas"
+              class="section-testimonials--testi_img"
+            />
+            <p class="section-testimonials--testi_text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <h3 class="section-testimonials--testi_name">
+              Thomas S.
+              <span class="section-testimonials--testi_post">
+                Chief Operating Officer
+              </span>
+            </h3>
+          </article>
+
+          <article class="section-testimonials--testi flex flex-col">
+            <img
+              src="./src/images/image-jennie.jpg"
+              alt="jennie"
+              class="section-testimonials--testi_img"
+            />
+            <p class="section-testimonials--testi_text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <h3 class="section-testimonials--testi_name">
+              Jennie F.
+              <span class="section-testimonials--testi_post"
+                >Business Owner</span
+              >
+            </h3>
+          </article>
+        </div>
+      </section>
+      <section class="section-images flex">
+        <img
+          src="./src/images/desktop/image-gallery-milkbottles.jpg"
+          alt="milk-bottles"
+          class="section-images--image"
+        />
+        <img
+          src="./src/images/desktop/image-gallery-orange.jpg"
+          alt="milk-bottles"
+          class="section-images--image"
+        />
+        <img
+          src="./src/images/desktop/image-gallery-cone.jpg"
+          alt="milk-bottles"
+          class="section-images--image"
+        />
+        <img
+          src="./src/images/desktop/image-gallery-sugarcubes.jpg"
+          alt="milk-bottles"
+          class="section-images--image"
+        />
+      </section>
+    </main>
+
+    <footer class="footer flex flex-col">
+      <a href="#" class="footer-logo">
+        <img
+          class="footer-logo_img"
+          src="./src/images/logo.svg"
+          alt="logo"
+          aria-hidden="true"
+        />
+      </a>
+      <ul class="footer-list flex">
+        <li class="footer-list--item"><a href="#">About</a></li>
+        <li class="footer-list--item"><a href="#">Services</a></li>
+        <li class="footer-list--item"><a href="#">Projects</a></li>
+      </ul>
+      <div class="footer-icons flex">
+        <a class="footer-icons--icon href="#">
+          <img
+            src="./src/images/icon-facebook.svg"
+            alt="facebook"
+            aria-hidden="true"
+        /></a>
+        <a class="footer-icons--icon href="#">
+          <img
+            src="./src/images/icon-instagram.svg"
+            alt="instagram"
+            aria-hidden="true"
+          />
+        </a>
+        <a class="footer-icons--icon href="#">
+          <img
+            src="./src/images/icon-twitter.svg"
+            alt="twitter"
+            aria-hidden="true"
+          />
+        </a>
+        <a class="footer-icons--icon href="#">
+          <img
+            src="./src/images/icon-pinterest.svg"
+            alt="pinterest"
+            aria-hidden="true"
+          />
+        </a>
+      </div>
+      <p class="footer-attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/dabinderudhan">Dabinder Udhan</a>.
+      </p>
+    </footer>
+  </body>
+</html>

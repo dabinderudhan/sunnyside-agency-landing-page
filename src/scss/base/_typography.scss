@@ -1,0 +1,14 @@
+body {
+  font-family: $ff-default;
+  font-size: $fs-default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ff-heading;
+  font-weight: $fw-darker;
+}

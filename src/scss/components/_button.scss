@@ -1,0 +1,22 @@
+.btn {
+  cursor: pointer;
+  background-color: $color-white;
+  color: $color-neutral-darker;
+  font-family: $ff-heading;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: hsl(198, 92%, 76%);
+    color: $color-white;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    background-color: $color-primary-yellow;
+  }
+}
